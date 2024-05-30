@@ -1,0 +1,73 @@
+---
+title: 'Fetch Submission'
+icon: 'code'
+---
+
+### URL
+`https://phish.observer/api/submission/<id>`
+
+```json Response
+{
+    "id": "string",
+    "url": "string",
+    "favicon": "string",
+    "effectiveUrl": "string",
+    "realDomain": "string",
+    "parsedDomain": "string",
+    "status": "string",
+    "screenshot": "string",
+    "mobileScreenshot": "string",
+    "errorReason": "string",
+    "api": "boolean",
+    "node": "string",
+    "timeline": [
+        {
+            "event": "string",
+            "timestamp": "string"
+        }
+    ],
+    "createdAt": "string",
+    "assets": {
+        "count": "number",
+        "url": "string"
+    },
+    "dns": {
+        "count": "number",
+        "records": [
+            {
+                "type": "string",
+                // different for every DNS record
+            }
+        ]
+    },
+    "abuseContacts": [
+        {
+            "asn": "number",
+            "aso": "string",
+            "contacts": [
+                "string"
+            ],
+            "type": "string"
+        }
+    ],
+    "tags": [
+        "string"
+    ],
+    "scan": {
+        "status": "string",
+        "iok": [
+            {
+                "kit": {
+                    "tags": [
+                        "string"
+                    ],
+                    "sortedTags": [
+                        "string"
+                    ],
+                    "name": "string"
+                }
+            }
+        ]
+    }
+}
+```

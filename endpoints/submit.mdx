@@ -1,0 +1,30 @@
+---
+title: 'Submit URL'
+description: 'Description of your new file.'
+---
+
+This endpoint requires authorization.
+
+### URL
+
+`https://phish.observer/api/submit`
+
+```json Request
+{
+    "url": "https://url.com/path", // required
+    "tags": [ // optional
+        "tag1",
+        "tag2"
+    ]
+}
+```
+
+> Some URLs are blocked in order to prevent spam requests to trusted websites.
+
+Tags are limited to up to **24** characters long, 5 can be used per submissions, and they are not unique. 
+
+```json Response
+{
+  "id": "submission-id"
+}
+```
