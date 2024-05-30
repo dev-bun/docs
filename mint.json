@@ -27,11 +27,6 @@
   },
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open",
-      "url": "quickstart"
-    },
-    {
       "name": "Website",
       "icon": "globe",
       "url": "https://phish.observer"
@@ -46,7 +41,8 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction"
+        "introduction",
+        "start"
       ]
     },
     {
